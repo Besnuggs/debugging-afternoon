@@ -15,7 +15,7 @@ class App extends Component {
       shoppingCart: []
     }
 
-    this.addToShoppingCart = this.addToShoppingCart.bind(this);
+    
     this.removeFromShoppingCart = this.removeFromShoppingCart.bind(this);
   }
 
@@ -23,7 +23,6 @@ class App extends Component {
     this.setState({
       shoppingCart: [...this.state.shoppingCart, product]
     })
-    console.log(this.state.shoppingCart);
   }
 
   removeFromShoppingCart(product) {
@@ -32,11 +31,10 @@ class App extends Component {
     this.setState({
       shoppingCart: newShoppingCart
     })
-    console.log(this.state.shoppingCart);
   }
 
   render() {
-    return (
+    retrun (
       <div className="App">
         <NavBar />
         <Switch>

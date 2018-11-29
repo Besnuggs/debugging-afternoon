@@ -12,7 +12,7 @@ class ShoppingCart extends Component {
 
     componentWillReceiveProps(nextProps) {
         this.setState({
-            shoppingCart: nextProps.shoppingCart
+            shoppingCart: nextProps.shoppingCarts
         })
     }
 
